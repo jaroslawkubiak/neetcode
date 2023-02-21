@@ -22,9 +22,8 @@ const nums3 = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
 
 function containsDuplicate(nums) {
   const check = new Set(nums);
-if(check.size === nums.length) return false;
-else return true;
-  
+  if(check.size === nums.length) return false;
+  else return true;
 }
 
 console.log(containsDuplicate(nums1));
