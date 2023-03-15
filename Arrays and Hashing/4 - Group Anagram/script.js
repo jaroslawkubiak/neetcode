@@ -1,3 +1,4 @@
+"use strict";
 const strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
 // const strs = ["", "", ""]; //[["","",""]]
 
@@ -21,12 +22,9 @@ var groupAnagrams = function (strs) {
       const matchingString = mySort(strs[i]);
 
       if (convertString === matchingString) tempArr.push(strs[i]);
-      
     }
-    temp.set(convertString, tempArr)
-
+    temp.set(convertString, tempArr);
   }
-
 
   return [...temp.values()];
 };
@@ -34,8 +32,6 @@ var groupAnagrams = function (strs) {
 console.log(groupAnagrams(strs));
 
 // TODO nie działa, test case przechodzi, ale submit już nie.
-
-
 
 // var groupAnagrams = (words, map = new Map()) => {
 //   if (!words.length) return [];
@@ -100,5 +96,3 @@ console.log(groupAnagrams(strs));
 // const getCode = (char) => char.charCodeAt(0) - 'a'.charCodeAt(0);
 
 // const buildHash = (frequency) => frequency.toString();
-
-

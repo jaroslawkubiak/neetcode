@@ -1,3 +1,5 @@
+"use strict";
+
 const s = "A man, a plan, a canal: Panama";
 
 // main function
